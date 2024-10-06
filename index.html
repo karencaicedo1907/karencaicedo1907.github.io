@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expofoodtropiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ExpoFoodTropiques</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#nosotros" onclick="showSection('nosotros')">Nosotros</a></li>
+                <li><a href="#servicios" onclick="showSection('servicios')">Servicios</a></li>
+                <li><a href="#catalogo" onclick="showSection('catalogo')">Catálogo</a></li>
+                <li><a href="#contacto" onclick="showSection('contacto')">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal (Hero Section) -->
+    <section id="inicio" class="hero active">
+        <div class="hero-content">
+            <h1>Bienvenido a Mi Empresa</h1>
+            <p>Ofrecemos soluciones a medida para tu negocio.</p>
+        </div>
+        <img class="hero-image" src="img/1.jpgn.jpeg" alt="Descripción de la imagen">
+    </section>
+    
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="content-section">
+        <h2>Sobre Nosotros</h2>
+        <p>En Expofoodtropiques, promovemos el uso del ají en la cocina tropical.</p>
+        <img src="img/nosotros.jpg" alt="Imagen sobre nosotros">
+    </section>
+
+    <!-- Sección de Servicios -->
+<section id="servicios" class="content-section">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+        <div class="service-item">
+            <h3>Degustaciones</h3>
+            <p>Ofrecemos experiencias de degustación de diferentes variedades de ají.</p>
+        </div>
+        <div class="service-item">
+            <h3>Educación</h3>
+            <p>Brindamos talleres sobre el uso y beneficios del ají en la cocina.</p>
+        </div>
+        <div class="service-item">
+            <h3>Venta de Productos</h3>
+            <p>Vendemos una variedad de productos a base de ají.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Catálogo -->
+    <section id="catalogo" class="content-section">
+        <h2>Catálogo de Ajíes</h2>
+        <div class="catalogo-grid">
+            <div class="catalogo-item">
+                <img src="img/aji1.jpg" alt="Ají Picante" class="catalogo-img">
+                <h3>Ají Picante</h3>
+                <p>Un ají con un sabor intenso y un toque picante que realza cualquier plato.</p>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/aji2.jpg" alt="Ají Dulce" class="catalogo-img">
+                <h3>Ají Dulce</h3>
+                <p>Perfecto para ensaladas, este ají agrega un sabor suave y dulce.</p>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/aji3.jpg" alt="Ají Amarillo" class="catalogo-img">
+                <h3>Ají Amarillo</h3>
+                <p>Un clásico en la cocina, aporta un hermoso color y un sabor distintivo.</p>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/aji4.jpg" alt="Ají Verde" class="catalogo-img">
+                <h3>Ají Verde</h3>
+                <p>Ideal para salsas y guisos, con un sabor fresco y picante.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Sección Contacto -->
+<section id="contacto" class="content-section">
+    <h2>Contáctanos</h2>
+    <form action="/enviar-mensaje" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <div class="whatsapp-contact">
+        <h3>También puedes contactarnos a través de WhatsApp:</h3>
+        <a href="https://wa.me/3137294568?text=Hola,%20me%20gustaría%20más%20información%20sobre%20tu%20catálogo!" target="_blank" class="whatsapp-btn">
+            Contactar por WhatsApp
+        </a>
+    </div>
+</section>
+
+
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Expofoodtropiques. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
